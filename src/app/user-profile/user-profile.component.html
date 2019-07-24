@@ -2,7 +2,7 @@
     <img [src]='User.photo'/>
     <p>Nom:{{ User.name }}</p>
     <p>Prénom:{{User.firstName}}</p>
-    <p [hidden]='hiddenAge'> Age:{{User.age}}</p>
+    <p [hidden]='!cache'> Age:{{User.age}}</p>
     <p>{{User.quote}}</p>
     <input type='text' name="quote"  [(ngModel)] ="User.quote" />
     <button (click)="hiddenAge()">Hidden</button>

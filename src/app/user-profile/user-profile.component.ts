@@ -17,11 +17,12 @@ export class UserProfileComponent implements OnInit {
   
 
   constructor() { }
+  cache=true;
   hiddenAge(){
-    if(this.hiddenAge = !this.hiddenAge) {
-      return !this.hiddenAge;
+    if(this.cache  = !this. cache) {
+      return !this.cache;
     } else {
-      return this.hiddenAge;
+      return this.cache;
     }
 
   }
