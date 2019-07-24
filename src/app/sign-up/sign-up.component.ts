@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-sign-up',
-  template: `<div>
-  <h2>{{ emailtagueule }}</h2>
-  <input type='email' name="email"  [(ngModel)] ="emailtagueule" />
-  </div>`,
+  templateUrl:'./sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
+  @Input()  emailtagueule: string ;
 
   constructor() { }
 
